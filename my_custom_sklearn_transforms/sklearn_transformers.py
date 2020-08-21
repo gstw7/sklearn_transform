@@ -27,4 +27,4 @@ def subs_notas(df, columns, nota, subs):
     subs: nota para o qual quem está acima do limite irá ser substituida'''
     
     df.loc[df[columns] > nota, columns] = subs
-    return
+    return df
